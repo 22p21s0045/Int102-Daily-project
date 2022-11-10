@@ -24,3 +24,16 @@ body{
 #menu > a:hover {
     color: #3BACB6;
 }
+#home {
+    display: flex;
+    flex-direction: row;
+    gap: 40%;
+}
+/* welcome section */
+#home > #welcome {
+    position: relative;
+    font-size:38px;
+    text-align: center;
+    left: 10%;
+    top: 70px;
+}
