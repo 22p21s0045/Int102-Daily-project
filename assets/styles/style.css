@@ -33,6 +33,11 @@
     rotate: -5deg;
   }
 }
+html { /* body won't work ¯\_(ツ)_/¯ */
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+   
+  }
 body {
   font-family: "Kanit", sans-serif;
   margin: 0;
@@ -51,6 +56,7 @@ body {
   font-size: 28px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   font-weight: bold;
+  scroll-snap-align: start;
 }
 #menu > a {
   text-decoration: none;
@@ -63,6 +69,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 40%;
+  
 }
 /* welcome section */
 #home > #welcome {
@@ -71,6 +78,7 @@ body {
   text-align: center;
   left: 10%;
   top: 70px;
+  
 }
 /* Welcome button */
 #welcome > div > a {
@@ -116,5 +124,6 @@ body {
   transform: rotate(-7.2deg);
   animation: tranform_Avatar 5s;
   border: 9px solid #000000;
+  scroll-snap-align: start;
 
 }
