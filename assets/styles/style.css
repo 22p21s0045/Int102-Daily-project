@@ -37,3 +37,20 @@ body{
     left: 10%;
     top: 70px;
 }
+/* Welcome button */
+#welcome > div > a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #BBC889;
+    border-radius: 21px;
+    position: relative;
+    top:53px;
+    text-decoration: none;
+    font-size: 28px;
+    width: 150px;
+    height: 45px;
+    color: #000000;
+    
+
+}
