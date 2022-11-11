@@ -10,11 +10,27 @@
     transform: scale(1);
   }
 }
+/* fade background */
+@keyframes fadeBg {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #ffe1aa;
+  }
+  100% {
+    background-color: #F7EDDB;
+  }
+}
+    
+
 body {
   font-family: "Kanit", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7eddb;
+ 
+  animation: fadeBg 5s ;
+  background-color: #F7EDDB;
 }
 #menu {
   position: absolute;
@@ -62,4 +78,5 @@ body {
   height: 45px;
   color: #000000;
   animation: scale 2s infinite;
+  border: 3px solid #000000;
 }
