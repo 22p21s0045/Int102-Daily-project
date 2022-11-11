@@ -46,9 +46,12 @@
     rotate: -5deg;
   }
 }
+.avatar-img {
+  animation: tranform_Avatar 10s ;
+}
 /* scroll snap */
 html {
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   scroll-behavior: smooth;
 }
 body {
@@ -139,7 +142,7 @@ body {
 #avatar > img {
   border-radius: 20px;
   transform: rotate(-7.2deg);
-  animation: tranform_Avatar 5s;
+  /* animation: tranform_Avatar 5s; */
   border: 9px solid #000000;
   scroll-snap-align: start;
 }
