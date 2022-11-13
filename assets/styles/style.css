@@ -47,7 +47,7 @@
   }
 }
 .avatar-img {
-  animation: tranform_Avatar 10s ;
+  animation: tranform_Avatar 10s;
 }
 /* scroll snap */
 html {
@@ -118,8 +118,8 @@ body {
 
   animation: fade-welcome-button 2s;
 }
-
-#section1 > img {
+/* Wave */
+#section1 > #wave > img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -139,16 +139,15 @@ body {
 
   background-color: #dae2b6;
 }
-#avatar > img {
+#avatar > #myimg {
   border-radius: 20px;
   transform: rotate(-7.2deg);
   /* animation: tranform_Avatar 5s; */
   border: 9px solid #000000;
   scroll-snap-align: start;
 }
-#avatar > img:hover {
-    transform: rotate(0deg);
-    
+#avatar > #myimg:hover {
+  animation-play-state: paused;
 
-   
-  }
+  transform: rotate(0deg);
+}
