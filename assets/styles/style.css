@@ -146,3 +146,9 @@ body {
   border: 9px solid #000000;
   scroll-snap-align: start;
 }
+#avatar > img:hover {
+    transform: rotate(0deg);
+    
+
+   
+  }
