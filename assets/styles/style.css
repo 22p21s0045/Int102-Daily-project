@@ -41,6 +41,7 @@
     transform: scale(1);
   }
   50% {
+    transform:translateX(-400px);
     rotate: 20deg;
   }
   100% {
@@ -146,10 +147,12 @@ body {
   /* animation: tranform_Avatar 5s; */
   border: 9px solid #000000;
   scroll-snap-align: start;
+  transform:translateX(-400px);
  
 }
 #avatar > #myimg:hover {
   animation-play-state: paused;
+  transform:translateX(-400px);
 
   transform: rotate(0deg);
 }
