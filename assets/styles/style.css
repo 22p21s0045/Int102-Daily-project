@@ -156,3 +156,9 @@ body {
 
   transform: rotate(0deg);
 }
+#greeting-box{
+background-color: #BBDE6F;
+height: 495px;
+width: 560px;
+border-radius: 80px;
+}
