@@ -164,6 +164,8 @@ width: 560px;
 border-radius: 80px;
 text-align: center;
 padding: 5%;
+padding-top:3%;
+border:solid 3px #000000;
 }
 #greeting-box > span{
   position: relative;
