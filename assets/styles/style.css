@@ -157,8 +157,19 @@ body {
   transform: rotate(0deg);
 }
 #greeting-box{
+
 background-color: #BBDE6F;
-height: 495px;
+height: 390px;
 width: 560px;
 border-radius: 80px;
+text-align: center;
+padding: 5%;
+}
+#greeting-box > span{
+  position: relative;
+  
+  top: 50px;
+  margin: 30px;
+  text-align: left;
+  font-size: 29px;
 }
