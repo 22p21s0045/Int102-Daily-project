@@ -177,7 +177,8 @@ body {
   font-size: 29px;
 }
 
-#section2 > img {
+#section2 > #wave2 > img {
+
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -185,6 +186,8 @@ body {
 }
 #section1 {
   position: relative;
+  
+  z-index: 1;
 }
 #home {
   position: relative;
