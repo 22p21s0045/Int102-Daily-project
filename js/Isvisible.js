@@ -20,6 +20,16 @@ const bush = new IntersectionObserver((entries) => {
     }
   });
 });
-
+const box_message_1 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("box-message-1");
+    } else {
+      entry.target.classList.remove("box-message-1");
+      console.log("not visible");
+    }
+  });
+});
 observable.observe(document.querySelector("#avatar > img "));
-bush.observe(document.querySelector("#bush"))
+bush.observe(document.querySelector("#bush"));
+box_message_1.observe(document.querySelector("#greeting2"));

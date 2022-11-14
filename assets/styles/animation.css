@@ -7,10 +7,35 @@
     }
     
 }
+@keyframes move_box {
+    0%{
+        transform: translateX(0);
+        
+    }
+    50%{
+        transform: translateX(50%) rotate(-4deg);
+      
+
+
+    }
+    100%{
+    
+        transform: rotate(0deg);
+    }
+
+    
+    
+}
 /* moving bush */
 .bush {
     animation-delay: 5s;
     animation: move_bush 5s ease-in-out;
     transform: translateX(-50%);
    
+}
+.box-message-1{
+    animation: move_box 5s ease-in-out;
+    transform: translateX(50%);
+    transform: rotate(-4deg);
+
 }
