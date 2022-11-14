@@ -192,3 +192,12 @@ body {
 #home {
   position: relative;
 }
+
+#box2{
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  background-color: #F7EDDB;
+ 
+}
