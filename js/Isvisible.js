@@ -40,6 +40,17 @@ const girl = new IntersectionObserver((entries) => {
     }
   });
 });
+const cloud = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("cloud");
+    } else {
+      entry.target.classList.remove("cloud");
+      console.log("not visible");
+    }
+  });
+});
+cloud.observe(document.querySelector("#cloud"));
 observable.observe(document.querySelector("#avatar > img "));
 bush.observe(document.querySelector("#bush"));
 box_message_1.observe(document.querySelector("#greeting2"));
