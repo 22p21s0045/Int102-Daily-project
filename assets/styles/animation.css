@@ -20,7 +20,7 @@
     }
     100%{
     
-        transform: rotate(0deg);
+        transform: rotate(0deg)  ;
     }
 
     
@@ -35,7 +35,7 @@
 }
 .box-message-1{
     animation: move_box 5s ease-in-out;
-    transform: translateX(50%);
-    transform: rotate(-4deg);
+    transform: translateX(10%) rotate(0deg);
+   
 
 }

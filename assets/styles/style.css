@@ -55,6 +55,7 @@
 html {
   /* scroll-snap-type: y mandatory; */
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 body {
   font-family: "Kanit", sans-serif;
