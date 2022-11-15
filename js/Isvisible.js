@@ -30,6 +30,17 @@ const box_message_1 = new IntersectionObserver((entries) => {
     }
   });
 });
+const girl = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("girl");
+    } else {
+      entry.target.classList.remove("girl");
+      console.log("not visible");
+    }
+  });
+});
 observable.observe(document.querySelector("#avatar > img "));
 bush.observe(document.querySelector("#bush"));
 box_message_1.observe(document.querySelector("#greeting2"));
+girl.observe(document.querySelector("#girl-image"));

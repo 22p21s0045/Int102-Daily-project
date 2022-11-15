@@ -1,41 +1,45 @@
 @keyframes move_bush {
-   from {
-        transform: translateX(-25%);
-   }
-    to {
-          transform: translateX(-50%);
-    }
-    
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 @keyframes move_box {
-    0%{
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%) rotate(-4deg);
+  }
+  100% {
+    transform: translateX(50%) rotate(-4deg);
+  }
+}
+@keyframes move_girl {
+    0% {
         transform: translateX(0);
-        
     }
-    50%{
-        transform: translateX(50%) rotate(-4deg);
-      
-
-
+    50% {
+        transform: translateX(-50%) rotate(4deg) translateY(10%);
     }
-    100%{
-    
-        transform: translateX(50%) rotate(-4deg);  ;
+    100% {
+        transform: translateX(-50%) rotate(4deg) translateY(10%);
     }
-
-    
     
 }
 /* moving bush */
 .bush {
-    animation-delay: 5s;
-    animation: move_bush 5s ease-in-out;
-    transform: translateX(-50%);
-   
+  animation-delay: 5s;
+  animation: move_bush 5s ease-in-out;
+  transform: translateX(-50%);
 }
-.box-message-1{
-    animation: move_box 5s ease-in-out;
-    transform: translateX(50%) rotate(0deg);
-   
-
+.box-message-1 {
+  animation: move_box 5s ease-in-out;
+  transform: translateX(50%) rotate(-4deg);
+}
+.girl{
+    animation: move_girl 5s ease-in-out;
+    transform: translateX(-50%) rotate(4deg) translateY(10%)
 }
