@@ -60,6 +60,17 @@ const cloud3 = new IntersectionObserver((entries) => {
     }
   });
 });
+const cloud4 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("cloud4");
+    } else {
+      entry.target.classList.remove("cloud4");
+      console.log("not visible");
+    }
+  });
+});
+cloud4.observe(document.querySelector("#cloud4"));
 cloud3.observe(document.querySelector("#cloud3"));
 cloud.observe(document.querySelector("#cloud"));
 observable.observe(document.querySelector("#avatar > img "));
