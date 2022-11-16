@@ -42,6 +42,19 @@
 
     
 }
+@keyframes move_cloud3 {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%) translateY(30%);
+    }
+    100% {
+        transform: translateX(10%) translateY(30%);
+    }
+
+    
+}
 /* moving bush */
 .bush {
   animation-delay: 5s;
@@ -58,5 +71,9 @@
 }
 .cloud{
     animation: move_cloud 10s ease-in-out;
+    transform: translateX(10%) translateY(30%);
+}
+.cloud3{
+    animation: move_cloud3 10s ease-in-out;
     transform: translateX(10%) translateY(30%);
 }
