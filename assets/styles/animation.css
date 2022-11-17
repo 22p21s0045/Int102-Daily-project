@@ -164,3 +164,23 @@
     animation: move_cloud4 10s ease-in-out;
     transform: translateX(10%) translateY(30%);
 }
+.move_diary-box-5{
+    animation: move_diary_5 5s ease-in-out;
+    transform: translateX(-50%) translateY(10%);
+}
+.move_diary-box-4{
+    animation: move_diary_4 5s ease-in-out;
+    transform: translateX(-50%) translateY(10%);
+}
+.move_diary-box-3{
+    animation: move_diary_3 5s ease-in-out;
+    transform: translateX(-50%) translateY(10%);
+}
+.move_diary-box-2{
+    animation: move_diary_2 5s ease-in-out;
+    transform: translateX(-50%) translateY(10%);
+}
+.move_diary-box-1{
+    animation: move_diary_1 5s ease-in-out;
+    transform: translateX(-50%) translateY(10%);
+}
