@@ -70,6 +70,58 @@ const cloud4 = new IntersectionObserver((entries) => {
     }
   });
 });
+const diary_box_1 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("diary-box-1");
+    } else {
+      entry.target.classList.remove("diary-box-1");
+      console.log("not visible");
+    }
+  });
+});
+const diary_box_2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("diary-box-2");
+    } else {
+      entry.target.classList.remove("diary-box-2");
+      console.log("not visible");
+    }
+  });
+});
+const diary_box_3 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("diary-box-3");
+    } else {
+      entry.target.classList.remove("diary-box-3");
+      console.log("not visible");
+    }
+  });
+});
+const diary_box_4 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("diary-box-4");
+    } else {
+      entry.target.classList.remove("diary-box-4");
+      console.log("not visible");
+    }
+  });
+});
+const diary_box_5 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("diary-box-5");
+    } else {
+      entry.target.classList.remove("diary-box-5");
+      console.log("not visible");
+    }
+  });
+});
+
+
 cloud4.observe(document.querySelector("#cloud4"));
 cloud3.observe(document.querySelector("#cloud3"));
 cloud.observe(document.querySelector("#cloud"));
