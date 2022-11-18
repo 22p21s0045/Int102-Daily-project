@@ -70,7 +70,7 @@
 }
 @keyframes move_diary_1 {
     0% {
-        transform: translateX(0);
+        transform: translateX(10%);
         opacity: 0;
     }
     50% {
@@ -191,6 +191,8 @@
     transform: translateX(-50%) translateY(10%);
 }
 .move_diary-box-1{
+    
+    
     animation: move_diary_1 5s ease-in-out;
     transform: translateX(-50%) translateY(10%);
 }
