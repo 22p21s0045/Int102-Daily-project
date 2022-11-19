@@ -1,16 +1,66 @@
-body{
-    font-size: 16px;
+
+body {
+  font-size: 16px;
+  animation: backgrounds 5s infinite ease-in-out;
+  background: #98a8f8;
 }
-.box-content{
-    width:60%;
-    height:30vh;
-    margin: auto;
-    background: #B9E0FF;
-    border-radius: 26px;
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08), 0px 6px 24px rgba(0, 0, 0, 0.05);
-    padding: 4%;
-    text-align: left;
-    font-size: 1.5rem;
+@keyframes button_next {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10%);
+    }
+    100% {
+      transform: translateY(-10%);
+    }
+  }
+  @keyframes back_button {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(10%);
+    }
+    
+}
+@keyframes backgrounds {
+  0% {
+    background: #fff5e4;
+  }
+  50% {
+    background: #ffe3e1;
+  }
+  75% {
+    background: #ffd1d1;
+  }
+  100% {
+    background: #fff5e4;
+  }
+}
+#next-button {
+  animation: button_next 5s infinite ease-in-out;
+}
+#next-button:hover {
+  animation-play-state: paused;
+}
+.box-content {
+  width: 60%;
+  height: 30vh;
+  margin: auto;
+  background: #b9e0ff;
+  border-radius: 26px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08),
+    0px 6px 24px rgba(0, 0, 0, 0.05);
+  padding: 4%;
+  text-align: left;
+  font-size: 1.5rem;
+}
 
 
+#back-button {
+    animation: back_button 5s infinite ease-in-out;
 }
