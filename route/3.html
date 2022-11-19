@@ -17,7 +17,10 @@
         <h1>Hello world 3!</h1>
       </div>
       <div style="margin-left: auto">
-        <img src="../assets/svg/home.svg" alt="home icon" />
+        <a href="../index.html">
+            <img src="../assets/svg/home.svg" alt="home icon" />
+
+        </a>
       </div>
     </div>
     <div class="box-content">
@@ -43,16 +46,21 @@
         autoplay
       ></lottie-player>
     </div>
-    <div style="margin: auto">
-        <a href="./3.html">
-      <img
-        src="../assets/svg/next.svg"
-        alt="continue"
-        style="position: relative; left: 45%; margin-top: 10%"
-        id ="next-button"
-      />
-    </a>
-    </div>
+    <div style="margin: auto; margin-top:10%">
+        <div id="container" style = "display: flex; justify-content: center; flex-direction: row-reverse;">
+          <a href="./3.html">
+            <img
+              src="../assets/svg/next.svg"
+              alt="continue"
+              
+              id="next-button"
+            />
+          </a>
+          <a href="./2.html">
+            <img src="../assets/svg/back.svg" alt="back" id="back-button" />
+          </a>
+        </div>
+      </div>
     
 </body>
 </html>
