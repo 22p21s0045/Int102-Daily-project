@@ -4,9 +4,13 @@ body {
   animation: backgrounds 5s infinite ease-in-out;
   background: #98a8f8;
 }
+#background-2 {
+  animation: background_2 5s infinite ease-in;
+  background-color: #FFF9CA;;
+}
 @keyframes button_next {
     0% {
-      transform: translateY(0);
+      transform: translateY(-10%);
     }
     50% {
       transform: translateY(10%);
@@ -17,7 +21,7 @@ body {
   }
   @keyframes back_button {
     0% {
-        transform: translateY(0);
+        transform: translateY(10%);
     }
     50% {
         transform: translateY(-10%);
@@ -41,6 +45,20 @@ body {
     background: #fff5e4;
   }
 }
+@keyframes background_2{
+    0% {
+        background: #FFF9CA;
+    }
+    50% {
+        background: #FFDEB4;
+    }
+    75% {
+        background: #FFB4B4;
+    }
+    100% {
+        background: #FFF9CA;
+    }
+}
 #next-button {
   animation: button_next 5s infinite ease-in-out;
 }
@@ -63,4 +81,9 @@ body {
 
 #back-button {
     animation: back_button 5s infinite ease-in-out;
+    transform: translateY(-10%);
+    
+}
+#back-button:hover {
+    animation-play-state: paused;
 }
