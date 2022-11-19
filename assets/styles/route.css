@@ -59,6 +59,33 @@ body {
         background: #FFF9CA;
     }
 }
+@keyframes backgroud_3{
+    0% {
+        background: #FFF9CA;
+    }
+    50% {
+        background: #FFDEB4;
+    }
+    75% {
+        background: #FFB4B4;
+    }
+    100% {
+        background: #FFF9CA;
+    }
+}
+    
+
+@keyframes flip_box{
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
 #next-button {
   animation: button_next 5s infinite ease-in-out;
 }
@@ -76,6 +103,7 @@ body {
   padding: 4%;
   text-align: left;
   font-size: 1.5rem;
+  animation: flip_box 2s 1 ease-in-out;
 }
 
 

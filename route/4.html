@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/route.css" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/styles/route.css" />
-    <title>Document</title>
-  </head>
-  <body id = "background-1">
+    <title>Document 4</title>
+</head>
+<body id = "background-3">
     <div
       id="title"
       style="display: flex; flex-direction: row; justify-content: center"
     >
       <div style="width: 50%; text-align: end">
-        <h1>Hello world !</h1>
+        <h1>Hello world 4!</h1>
       </div>
       <div style="margin-left: auto">
-        <img src="../assets/svg/home.svg" alt="home icon" />
+        <a href="../index.html">
+            <img src="../assets/svg/home.svg" alt="home icon" />
+
+        </a>
       </div>
     </div>
     <div class="box-content">
@@ -36,7 +39,7 @@
         In, veritatis?
       </span>
       <lottie-player
-        src="../assets/lottie/112253-plane.json"
+        src="../assets/lottie/Daily Journaling.json"
         background="transparent"
         speed="1"
         style="width: 100%; height: 100%"
@@ -44,16 +47,21 @@
         autoplay
       ></lottie-player>
     </div>
-    <div style="margin: auto">
-        <a href="./2.html">
-      <img
-        src="../assets/svg/next.svg"
-        alt="continue"
-        style="position: relative; left: 45%; margin-top: 10%"
-        id ="next-button"
-      />
-    </a>
-    </div>
-    <img src="../assets/svg/Eyes-amico.svg" style = "position:absolute; left:-10%;"alt="face" width="50%" height="50%">
-  </body>
+    <div style="margin: auto; margin-top:10%">
+        <div id="container" style = "display: flex; justify-content: center; flex-direction: row-reverse;">
+          <a href="./5.html">
+            <img
+              src="../assets/svg/next.svg"
+              alt="continue"
+              
+              id="next-button"
+            />
+          </a>
+          <a href="./3.html">
+            <img src="../assets/svg/back.svg" alt="back" id="back-button" />
+          </a>
+        </div>
+      </div>
+    
+</body>
 </html>
