@@ -48,6 +48,10 @@
     rotate: -5deg;
   }
 }
+@keyframes menu_hover {
+  
+  
+}
 .avatar-img {
   animation: tranform_Avatar 10s;
 }
@@ -84,6 +88,7 @@ body {
 }
 #menu > a:hover {
   color: #3bacb6;
+  text-decoration: underline;
 }
 #home {
   display: flex;
