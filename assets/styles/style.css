@@ -51,16 +51,16 @@
 @keyframes menu_hover {
   0% {
     transform: scale(1);
-    color: #BCEAD5;
+    color: #FFE600
   }
   50% {
     transform: scale(1.1);
-    color: #9ED5C5;
+    color: #FFE600
   }
   100% {
     transform: scale(1);
     text-decoration: underline;
-    color: #8EC3B0;
+    color: #FFE600
   }
   
   
@@ -100,7 +100,7 @@ body {
   color: #000000;
 }
 #menu > a:hover {
-  color: #3bacb6;
+  
   animation: menu_hover 1s ease-in-out;
   text-decoration: underline;
   
