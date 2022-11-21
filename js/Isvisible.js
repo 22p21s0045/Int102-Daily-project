@@ -130,8 +130,17 @@ const special_thanks = new IntersectionObserver((entries) => {
     }
   });
 });
-
-
+const boy = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("boy_jump");
+    } else {
+      entry.target.classList.remove("boy_jump");
+      console.log("not visible");
+    }
+  });
+});
+boy.observe(document.querySelector('#boy-jump'));
 cloud4.observe(document.querySelector("#cloud4"));
 cloud3.observe(document.querySelector("#cloud3"));
 cloud.observe(document.querySelector("#cloud"));
