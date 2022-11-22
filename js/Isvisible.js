@@ -120,8 +120,27 @@ const diary_box_5 = new IntersectionObserver((entries) => {
     }
   });
 });
-
-
+const special_thanks = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("special-thank");
+    } else {
+      entry.target.classList.remove("special-thank");
+      console.log("not visible");
+    }
+  });
+});
+const boy = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("boy_jump");
+    } else {
+      entry.target.classList.remove("boy_jump");
+      console.log("not visible");
+    }
+  });
+});
+boy.observe(document.querySelector('#boy-jump'));
 cloud4.observe(document.querySelector("#cloud4"));
 cloud3.observe(document.querySelector("#cloud3"));
 cloud.observe(document.querySelector("#cloud"));
@@ -134,3 +153,4 @@ diary_box_2.observe(document.querySelector(".diary-box-2"));
 diary_box_3.observe(document.querySelector(".diary-box-3"));
 diary_box_4.observe(document.querySelector(".diary-box-4"));
 diary_box_5.observe(document.querySelector(".diary-box-5"));
+special_thanks.observe(document.querySelector("#special-thank"));
