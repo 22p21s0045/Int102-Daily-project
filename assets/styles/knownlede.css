@@ -1,9 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 
-
+@keyframes backgrounds {
+  0% {
+    background: #a2ef9b;
+  }
+  50% {
+    background: #83e47a;
+  }
+  75% {
+    background: #9de497;
+  }
+  100% {
+    background: #7cea72;
+  }
+}
+@keyframes fly {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3%);
+  }
+  75% {
+    transform:scale(1.2)
+  }
+  
+}
 body {
   background-color: #a2ef9b;
   font-family: "Kanit";
+  animation: backgrounds 10s linear ease-out;
 }
 .container {
   display: flex;
@@ -15,12 +41,11 @@ body {
 .header {
   font-size: 2.3em;
   text-align: center;
-  
 }
 .contents {
   position: relative;
-  
-  top:20%;
+
+  top: 20%;
 }
 .item-1 {
   position: relative;
@@ -30,4 +55,8 @@ body {
   border: 23px solid #ffffff;
   width: 30%;
   height: 490px;
+  animation: fly 5s ease-in-out infinite;
+}
+.item-1:hover{
+    animation-play-state: paused;
 }
