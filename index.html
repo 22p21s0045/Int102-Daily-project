@@ -1,12 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- lottie file player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="Navbar">
+      <img src="./assets/svg/navbar-2.svg" alt="navbar" width="100%" />
+      <div id="menu">
+        <a href="#home">Home</a>
+        <a href="#diary">Diary</a>
+        <a href="#footer">Contact</a>
+        <a href="./route/summarize.html">Summarize</a>
+      </div>
+    </div>
+    <div id="home">
+      <!-- welcome section -->
+      <div id="welcome">
+        <span
+          >“ชีวิตก็เหมือนการเดินทาง <br />
+          ขอต้อนรับสู่การเดินทางของผม”</span
+        >
+        <!-- Go button -->
+        <div>
+          <a href="#diary">ไปกัน!!!</a>
+        </div>
+      </div>
+      <div>
+        <lottie-player
+          src="./assets/lottie/73387-tourist-travel.json"
+          background="transparent"
+          speed="1"
+          style="width: 666px; height: 648px; right: 0"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+    </div>
+    <!-- ภาพคนกระโดดลงมา -->
+    <div id="section1">
+      <img src="./assets/svg/GroovyDoodle 1.svg" alt="" style="top: 80%" id ="boy-jump" />
+<!-- Curve อันเเรกขั้นระหว่างส่วน 1-2 -->
+      <div id="wave">
+        <img src="./assets/svg/section1.svg" alt="wave" />
+      </div>
+
+      <div id="avatar">
+        <div style="position: relative; top: -170px" id="bush">
+          <img src="./assets/svg/bush.svg" alt="bush" />
+        </div>
+<!-- my image picture -->
+        <img
+          src="./assets/img/me.JPG"
+          alt="my image"
+          width="600"
+          height="640"
+          id="myimg"
+          style="position: absolute; right:30%"
+        />
+        <div id="greeting-box">
+          <span>
+            เเด่ความรู้สึกที่ยังสนุกกับการใช้ชีวิตเราไตเติ้ลคนเดิม555ขอให้สนุกกับเรื่องราวที่จะเล่านะอาจจะเพ้อไปบ้างก็ต้อง
+            ขออภัยขอบคุณที่ผ่านเข้ามานาาสู้ๆ
+          </span>
+
+          <lottie-player
+            src="./assets/lottie/117326-cat-playing-animation.json"
+            loop
+            autoplay
+            style="
+              width: 400px;
+              height: 400px;
+              margin-bottom: 100px;
+              position: relative;
+              bottom: 0px;
+              left: 20%;
+            "
+          ></lottie-player>
+        </div>
+      </div>
+    </div>
+    <div id="section2">
+      <div id="wave2" style="background-color: #dae2b6">
+        <img src="./assets/svg/wave2.svg" alt="wave" />
+      </div>
+      <div
+        id="box"
+        style="
+          background-color: #cdd89e;
+          display: flex;
+
+          height: 1000px;
+          width: 100%;
+          margin-top: -10px;
+        "
+      >
+        <div
+          id="greeting2"
+          style="
+            width: 695px;
+            height: 320px;
+            background-color: #f7eddb;
+            text-align: center;
+            border: 3px solid #000;
+          "
+        >
+          <span style="position: relative; top: 130px; font-size: 2.3em">
+            ยินดีต้อนรับสู่เรื่องราวของผม</span
+          >
+        </div>
+        <div id="girl-image" style="margin-left: auto">
+          <img src="./assets/svg/levitate.svg" alt="girl jump" />
+        </div>
+      </div>
+      <img
+        src="./assets/svg/cloud2.svg"
+        alt="cloud"
+        id="cloud"
+        style="
+          position: absolute;
+          top: 40%;
+          right: 0;
+          width: 100%;
+          height: 100%;
+        "
+        
+      />
+    </div>
     
-</body>
+
+    <div id="section3 ">
+      <img
+        src="./assets/svg/cloud3.svg"
+        alt="cloud3"
+        style="position: absolute; width: 70%; right: 0"
+        id="cloud3"
+      />
+      <img
+        src="./assets/svg/cloud3.svg"
+        alt="cloud3"
+        style="position: absolute; width: 30%"
+        id="cloud4"
+      />
+
+      <div
+        class="container"
+        id ="diary"
+        style="
+          display: flex;
+          padding-top: 50%;
+          align-items: center;
+          justify-content: right;
+          column-gap: 2%;
+          row-gap: 2%;
+          flex-wrap: wrap;
+        "
+      >
+      
+        <div
+          class="diary-box-1"
+          style="
+            width: 30%;
+            border: 3px solid #000000;
+            margin-top: 126px;
+            text-align: center;
+            background: linear-gradient(180deg, #d8f3b7 0%, #eeffd9 100%);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+          "
+        >
+          <h1>1. จุดเริ่มต้น</h1>
+          <span style="text-align: center">
+            การเดินทางได้เริ่มขึ้นเเล้ววันนั้นเป็นวันที่อากาศสดใสเป็นวันที่เหมาะกับการเริ่มต้นการเดินทางก้าวออกจากพื้นที่ปลอดภัยไปสู่การผจญภัยในสถานที่ใหม่ๆ
+            บอกลาทุกสิ่งไว้ด้านหลัง ตัวผมเองก็ไม่อาจรู้เลย....
+          </span>
+          <a href="./route/1.html">
+            <button
+            style="
+              background-color: #b9ffea;
+              width: 20%;
+              height: 50px;
+              border-radius: 14px;
+              margin: auto;
+              font-weight: bold;
+              border: 3px solid #000000;
+              font-size: 1.2em;
+              cursor: pointer;
+            "
+          >
+            อ่านต่อ
+          </button>
+
+          </a>
+        
+          <span style="color: rgba(0, 0, 0, 0.49)"> 7/11/65 </span>
+        </div>
+        <div
+          class="diary-box-2"
+          style="
+            width: 30%;
+            border: 3px solid #000000;
+            margin-top: 126px;
+            text-align: center;
+            background: linear-gradient(180deg, #d8f3b7 0%, #eeffd9 100%);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            
+          "
+        >
+          <h1>2. เดินทาง</h1>
+          <span style="text-align: center">
+            การเดินทางได้ดําเนินต่อไปวันเเล้ววันเล่าสนุกไปกับกลิ่นอายของชีวิตวัยรุ่นที่ได้ทําทุกๆสิ่งที่ต้องการ
+            ใช้ชีวิตที่อยากเป็น มีความสุขกับการใช้ชีวิตในทุกๆ
+            วันร่วมผจญภัยไปกับคู่หูนักเดินทาง ไปสู่หุบเขา..
+          </span>
+          <a href="./route/2.html">
+          <button
+            style="
+              background-color: #b9ffea;
+              width: 20%;
+              height: 50px;
+              border-radius: 14px;
+              margin: auto;
+              font-weight: bold;
+              border: 3px solid #000000;
+              font-size: 1.2em;
+              cursor: pointer;
+            "
+          >
+            อ่านต่อ
+          </button>
+        </a>
+          <span style="color: rgba(0, 0, 0, 0.49)"> 22/05/65 </span>
+        </div>
+
+        <div
+          class="diary-box-3"
+          style="
+            width: 30%;
+            border: 3px solid #000000;
+            margin-top: 126px;
+            text-align: center;
+            background: linear-gradient(180deg, #d8f3b7 0%, #eeffd9 100%);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+          "
+        >
+          <h1>3. ทางเเยก</h1>
+          <span style="text-align: center">
+            ความรูู้สึกในตอนนี้มันคืออะไรกันนะรู้สึกไม่เหมือนเดิมเลย
+            รู้สึกว่าตัวเองทําถูกเเล้วเเต่ก็ยังไม่ถูกสับสนในตัวเองเริ่มคุยกับคนรอบตัวน้อยลงไปนี่เราเป็นอะไรไปกันเเน่เนี่ยเราทําถูกเเล้วจิงๆใช่มัยรู้สึก...
+          </span>
+          <a href="./route/3.html">
+
+          
+          <button
+            style="
+              background-color: #b9ffea;
+              width: 20%;
+              height: 50px;
+              border-radius: 14px;
+              margin: auto;
+              font-weight: bold;
+              border: 3px solid #000000;
+              font-size: 1.2em;
+              cursor: pointer;
+            "
+          >
+            อ่านต่อ
+          </button>
+        </a>
+          <span style="color: rgba(0, 0, 0, 0.49)"> 4/11/65 </span>
+        </div>
+        <div
+          class="diary-box-4"
+          style="
+            width: 30%;
+            border: 3px solid #000000;
+            margin-top: 126px;
+            text-align: center;
+            background: linear-gradient(180deg, #d8f3b7 0%, #eeffd9 100%);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+          "
+        >
+          <h1>4. ตัวเอง</h1>
+          <span style="text-align: center">
+            ผมใช้ชีวิตไปเรื่อยๆ สนุกกับเพื่อนๆ ให้เวลากับคนรอบข้างทุกๆ
+            คนจนลืมสิ่งที่เรียกว่าตัวเอง
+            จนกระทั่งวันนึงผมได้มีเวลากลับมาคิดทบทวนกับตัวเอง
+            ว่าที่ผ่านมามันดีเเล้วจริงๆ หรือ ? เเละได้คําตอบ.....
+          </span>
+          <a href="./route/4.html">
+          <button
+            style="
+              background-color: #b9ffea;
+              width: 20%;
+              height: 50px;
+              border-radius: 14px;
+              margin: auto;
+              font-weight: bold;
+              border: 3px solid #000000;
+              font-size: 1.2em;
+              cursor: pointer;
+            "
+          >
+            อ่านต่อ
+          </button>
+        </a>
+          <span style="color: rgba(0, 0, 0, 0.49)"> 10/11/65 </span>
+        </div>
+        <div
+          class="diary-box-5"
+          style="
+            width: 30%;
+            border: 3px solid #000000;
+            margin-top: 126px;
+            text-align: center;
+            background: linear-gradient(180deg, #d8f3b7 0%, #eeffd9 100%);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+          "
+        >
+          <h1>5. หนีออก</h1>
+          <span style="text-align: center">
+            วันนี้เป็นวันที่ตัวผมเองได้ก้าวออกจากโลกเเห่งความจริงไปสู่โลกที่ทุกอย่างสงบพูดง่ายๆก็ไปเที่ยวนั้นเเหละ
+            วันนี้ผมได้ขึ้นรถไฟเป็นครั้งเเรกของชีวิตผู้รู้สึกประทับใจการเดินทางในครั้งนี้เป็นอย่างมากครับ...
+          </span>
+          <a href="./route/5.html">
+          <button
+            style="
+              background-color: #b9ffea;
+              width: 20%;
+              height: 50px;
+              border-radius: 14px;
+              margin: auto;
+              font-weight: bold;
+              border: 3px solid #000000;
+              font-size: 1.2em;
+              cursor: pointer;
+            "
+          >
+            อ่านต่อ
+          </button>
+        </a>
+          <span style="color: rgba(0, 0, 0, 0.49)"> 17/11/65 </span>
+        </div>
+      </div>
+    </div>
+    <div style = "text-align: center; margin-top:10%;font-size: 2.36em;">
+      <span id ="special-thank">ขอบคุณทุกความทรงจํา ส.ค.-พ.ย.</span>
+    </div>
+    <div class ="footer" id = "footer"style="display:flex; justify-content:center;  gap:3%; margin-top:10%">
+      <div>
+        <a href="https://github.com/22p21s0045/Int102-Daily-project">
+          <img src="./assets/svg/🦆 icon _github_.svg" alt="github icon">
+
+        </a>
+        
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/akkarawit-sittiprakan-58911523b">
+          <img src="./assets/svg/🦆 icon _social linkedin_.svg" alt="linkedin icon">
+
+        </a>
+       
+      </div>
+    </div>
+  </body>
+  <script src="./js/Isvisible.js"></script>
 </html>
