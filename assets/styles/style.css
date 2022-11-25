@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 @import url("./animation.css");
+/* scale menu in navbar */
 @keyframes scale {
   0% {
     transform: scale(1);
@@ -11,7 +12,7 @@
     transform: scale(1);
   }
 }
-/* fade background */
+/* fade background color */
 @keyframes fadeBg {
   0% {
     background-color: #fff;
@@ -35,7 +36,7 @@
     background-color: #9ed5c5;
   }
 }
-
+/* motion my picture */
 @keyframes tranform_Avatar {
   0% {
     transform: scale(1);
@@ -135,6 +136,7 @@ body {
   animation: scale 2s infinite;
   border: 3px solid #000000;
 }
+/* transition welcome button */
 #welcome > div > a:hover {
   background-color: #3bacb6;
   color: #ffffff;
@@ -188,6 +190,7 @@ body {
   padding-top: 3%;
   border: solid 3px #000000;
 }
+/* จัดข้อความข้างในเเนะนําตัว */
 #greeting-box > span {
   position: relative;
   left: 10%;
@@ -197,7 +200,7 @@ body {
   text-align: left;
   font-size: 29px;
 }
-
+/* ทําให้รูป curve มันพอดีกับหน้า */
 #section2 > #wave2 > img {
 
   width: 100%;

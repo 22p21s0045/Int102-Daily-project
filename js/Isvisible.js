@@ -1,3 +1,5 @@
+// Track user is visible the element
+// รูปเราเอง
 const observable = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -10,6 +12,7 @@ const observable = new IntersectionObserver((entries) => {
     }
   });
 });
+// transition เขียวๆ
 const bush = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -20,6 +23,7 @@ const bush = new IntersectionObserver((entries) => {
     }
   });
 });
+// กล่อง ยินดีต้อนรับสู่เรื่องราวของผม
 const box_message_1 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -40,6 +44,7 @@ const girl = new IntersectionObserver((entries) => {
     }
   });
 });
+// ก้อนเมฆหน้า welcome
 const cloud = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -140,6 +145,7 @@ const boy = new IntersectionObserver((entries) => {
     }
   });
 });
+// อยากให้ track element ไหน
 boy.observe(document.querySelector('#boy-jump'));
 cloud4.observe(document.querySelector("#cloud4"));
 cloud3.observe(document.querySelector("#cloud3"));

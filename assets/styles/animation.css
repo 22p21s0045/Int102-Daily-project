@@ -1,3 +1,4 @@
+/* boy animation in welcome page */
 @keyframes boy_jump {
     0% {
         transform: translateY(0);
@@ -12,6 +13,7 @@
     }
     
 }
+/* motion a green bush in page 2 */
 @keyframes move_bush {
   from {
     transform: translateX(-25%);
@@ -20,6 +22,7 @@
     transform: translateX(-50%);
   }
 }
+/* motion box message () */
 @keyframes move_box {
   0% {
     transform: translateX(0);
@@ -31,6 +34,7 @@
     transform: translateX(50%) rotate(-4deg);
   }
 }
+/* motion of girl red shirt */
 @keyframes move_girl {
   0% {
     transform: translateX(0);
@@ -42,6 +46,7 @@
     transform: translateX(-50%) rotate(4deg) translateY(10%);
   }
 }
+/* cloud in welcome page */
 @keyframes move_cloud {
   0% {
     transform: translateX(0);
@@ -53,6 +58,7 @@
     transform: translateX(10%) translateY(30%);
   }
 }
+/* cloud at end */
 @keyframes move_cloud3 {
   0% {
     transform: translateX(0);
@@ -64,6 +70,7 @@
     transform: translateX(10%) translateY(30%);
   }
 }
+/* cloud at end */
 @keyframes move_cloud4 {
   0% {
     transform: translateX(0);
@@ -140,6 +147,7 @@
     transform: translateX(-50%) translateY(10%);
   }
 }
+/* ขอบคุณทุกความทรงจํา */
 @keyframes special-thank {
     0% {
         
