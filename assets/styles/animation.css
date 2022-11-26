@@ -82,6 +82,7 @@
     transform: translateX(10%) translateY(30%);
   }
 }
+/* move diary box */
 @keyframes move_diary_1 {
   0% {
     transform: translateX(10%);
@@ -170,6 +171,7 @@
   animation: move_bush 5s ease-in-out;
   transform: translateX(-50%);
 }
+/* mover box ยินดีต้อนรับสู่ตัวของผม */
 .box-message-1 {
   animation: move_box 5s ease-in-out;
   transform: translateX(50%) rotate(-4deg);
