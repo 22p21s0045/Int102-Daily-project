@@ -74,7 +74,17 @@ body {
         background: #FFF9CA;
     }
 }
-    
+/* Custom scroll bar */
+::-webkit-scrollbar{
+  background-color: rgba(234, 95, 40, 0.958);
+  width:10px;
+  border-radius:10px;
+}  
+::-webkit-scrollbar-thumb{
+  background-color: rgb(8, 8, 8);
+  border-radius:10px;
+  height: 10px;
+}
 
 @keyframes flip_box{
     0% {
