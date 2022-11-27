@@ -7,8 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/styles/route.css" />
-    <link rel="shortcut icon" href="../assets/favicon/red-flag.png">
+    <link rel="shortcut icon" href="../assets/favicon/red-flag.png" />
     <title>จุดเริ่มต้น</title>
+    <style>
+      @keyframes fadein_1 {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          transform: translateY(-60vh) rotate(5deg);
+
+          opacity: 1;
+        }
+        100% {
+          transform: rotate(180deg);
+          opacity: 1;
+        }
+      }
+
+      #image-1 {
+        position: absolute;
+        transform: rotate(180deg);
+
+        right: 10%;
+        animation: fadein_1 10s;
+      }
+      #imge-2 {
+        position: absolute;
+      }
+    </style>
   </head>
   <body id="background-1">
     <audio src="">
@@ -56,12 +83,24 @@
         />
       </a>
     </div>
-    <img
-      src="../assets/svg/Eyes-amico.svg"
-      style="position: absolute; left: -10%"
-      alt="face"
-      width="50%"
-      height="50%"
-    />
+
+    <div id="image-1">
+      <img
+        src="../assets/img/1/IMG_4894.JPG"
+        alt="image-1"
+        width="375px"
+        height="505px"
+        style="border: 2px solid"
+      />
+    </div>
+    <div id="image-2">
+      <img
+        src="../assets/img/1/IMG_4900.JPG"
+        alt=""
+        width="375px"
+        height="505px"
+        style="border: 2px solid"
+      />
+    </div>
   </body>
 </html>
