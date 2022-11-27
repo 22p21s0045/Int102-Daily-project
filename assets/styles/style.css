@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 @import url("./animation.css");
 /* scale menu in navbar */
+html{
+  overflow-x: hidden;
+}
 @keyframes scale {
   0% {
     transform: scale(1);
