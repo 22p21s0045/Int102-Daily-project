@@ -155,6 +155,7 @@ const boy = new IntersectionObserver((entries) => {
     }
   });
 });
+
 // อยากให้ track element ไหน
 boy.observe(document.querySelector('#boy-jump'));
 cloud4.observe(document.querySelector("#cloud4"));
