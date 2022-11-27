@@ -125,6 +125,16 @@ const diary_box_5 = new IntersectionObserver((entries) => {
     }
   });
 });
+const diary_box_6 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("move_diary-box-6");
+    } else {
+      entry.target.classList.remove("move_diary-box-6");
+      console.log("not visible");
+    }
+  });
+});
 const special_thanks = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -159,4 +169,5 @@ diary_box_2.observe(document.querySelector(".diary-box-2"));
 diary_box_3.observe(document.querySelector(".diary-box-3"));
 diary_box_4.observe(document.querySelector(".diary-box-4"));
 diary_box_5.observe(document.querySelector(".diary-box-5"));
+diary_box_6.observe(document.querySelector(".diary-box-6"));
 special_thanks.observe(document.querySelector("#special-thank"));
