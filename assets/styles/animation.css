@@ -171,11 +171,12 @@
   animation: move_bush 5s ease-in-out;
   transform: translateX(-50%);
 }
-/* mover box ยินดีต้อนรับสู่ตัวของผม */
+/* move box ยินดีต้อนรับสู่ตัวของผม */
 .box-message-1 {
   animation: move_box 5s ease-in-out;
   transform: translateX(50%) rotate(-4deg);
 }
+/* move girl wear red shirt */
 .girl {
   animation: move_girl 5s ease-in-out;
   transform: translateX(-50%) rotate(4deg) translateY(10%);
@@ -192,6 +193,7 @@
   animation: move_cloud4 10s ease-in-out;
   transform: translateX(10%) translateY(30%);
 }
+/* move diary box */
 .move_diary-box-5 {
   animation: move_diary_5 5s ease-in-out;
   transform: translateX(-50%) translateY(10%);
@@ -212,10 +214,12 @@
   animation: move_diary_1 5s ease-in-out;
   transform: translateX(-50%) translateY(10%);
 }
+/* ขอบคุณทุกความทรงจํา */
 .special-thank {
     animation: special-thank 5s ease-in-out;
     transform: translateX(-50%) translateY(10%);
 }
+/* Boy jump in welcome */
 .boy_jump{
     animation: boy_jump 5s ease-in-out;
     animation-fill-mode: forwards;

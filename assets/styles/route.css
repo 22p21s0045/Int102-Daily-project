@@ -5,6 +5,7 @@ body {
   background: #98a8f8;
   font-family: Kanit, sans-serif;
 }
+/* backgroud in page 2 */
 #background-2 {
   animation: background_2 5s infinite ease-in;
   background-color: #FFF9CA;;
@@ -118,7 +119,7 @@ body {
   overflow-y: scroll;
 }
 
-
+/* button to go back */
 #back-button {
     animation: back_button 5s infinite ease-in-out;
     transform: translateY(-10%);
