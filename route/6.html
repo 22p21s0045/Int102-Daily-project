@@ -5,9 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/styles/route.css" />
-    <link rel="shortcut icon" href="../assets/favicon/escape.png">
+    <link rel="shortcut icon" href="../assets/favicon/escape.png" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+    <style>
+      @keyframes move_img_4 {
+        0% {
+          transform: translateX(0)
+        }
+        100% {
+          transform: translateX(30vw) translateY(50vh) rotate(180deg);
+        }
+      }
+      @keyframes move_img_3 {
+        0% {
+          transform: translateX(0) rotate(180deg);
+        }
+        100% {
+          transform: translateX(30vw) translateY(50vh) rotate(180deg);
+        }
+      }
+      @keyframes move_img_2 {
+        0% {
+          transform: translateX(0) rotate(180deg);
+        }
+        100% {
+          transform: translateX(30vw) translateY(50vh) rotate(180deg);
+        }
+      }
+      @keyframes move_img_1 {
+        0% {
+          transform: translateX(0)
+        }
+        100% {
+          transform: translateY(-10vw);
+        }
+      }
+      #img-container img {
+        border-radius: 3px;
+        border: 3px solid;
+      }
+      #img-item-1 {
+        animation: move_img_1 5s;
+      }
+    </style>
     <title>ความทรงจํา</title>
   </head>
   <body id="background-3">
@@ -16,11 +56,16 @@
       style="display: flex; flex-direction: row; justify-content: center"
     >
       <div style="width: 50%; text-align: end">
-        <h1>หนีออก</h1>
+        <h1>ความทรงจํา</h1>
       </div>
       <div style="margin-left: auto">
         <a href="../index.html">
-          <img src="../assets/svg/home.svg" alt="home icon" />
+          <img
+            src="../assets/svg/home.svg"
+            alt="home icon"
+            width="400px"
+            height="200px"
+          />
         </a>
       </div>
     </div>
@@ -40,6 +85,43 @@
         loop
         autoplay
       ></lottie-player>
+    </div>
+    <div
+      id="img-container"
+      style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top:10%"
+    >
+      <div id="img-item-1" style="width: 40%">
+        <img
+          src="../assets/img/memory/04630022.JPG"
+          alt=""
+          width="400px"
+          height="300px"
+        />
+      </div>
+      <div id="img-item-2" style="width: 40%">
+        <img
+          src="../assets/img/memory/41300025.JPG"
+          alt=""
+          width="400px"
+          height="300px"
+        />
+      </div>
+      <div id="img-item-3" style="width: 40%">
+        <img
+          src="../assets/img/memory/IMG_5070.JPG"
+          alt=""
+          width="400px"
+          height="300px"
+        />
+      </div>
+      <div id="img-item-4" style="width: 40%">
+        <img
+          src="../assets/img/memory/04630024.JPG"
+          alt=""
+          width="400px"
+          height="300px"
+        />
+      </div>
     </div>
     <div style="margin: auto; margin-top: 10%">
       <div
