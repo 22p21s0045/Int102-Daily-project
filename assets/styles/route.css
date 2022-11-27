@@ -5,6 +5,7 @@ body {
   background: #98a8f8;
   font-family: Kanit, sans-serif;
 }
+/* backgroud in page 2 */
 #background-2 {
   animation: background_2 5s infinite ease-in;
   background-color: #FFF9CA;;
@@ -74,7 +75,17 @@ body {
         background: #FFF9CA;
     }
 }
-    
+/* Custom scroll bar */
+::-webkit-scrollbar{
+  background-color: rgba(234, 95, 40, 0.958);
+  width:10px;
+  border-radius:10px;
+}  
+::-webkit-scrollbar-thumb{
+  background-color: rgb(8, 8, 8);
+  border-radius:10px;
+  height: 10px;
+}
 
 @keyframes flip_box{
     0% {
@@ -105,9 +116,10 @@ body {
   text-align: left;
   font-size: 1.5rem;
   animation: flip_box 2s 1 ease-in-out;
+  overflow-y: scroll;
 }
 
-
+/* button to go back */
 #back-button {
     animation: back_button 5s infinite ease-in-out;
     transform: translateY(-10%);
