@@ -8,46 +8,47 @@
     <link rel="shortcut icon" href="../assets/favicon/escape.png" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <style>
-      @keyframes fadein_1 {
+      @keyframes move_img_4 {
         0% {
-          opacity: 0;
-        }
-        50% {
-          transform: translateY(-50vh) rotate(5deg);
-
-          opacity: 1;
+          transform: translateX(0)
         }
         100% {
-          opacity: 1;
+          transform: translateX(30vw) translateY(50vh) rotate(180deg);
         }
       }
-      @keyframes move_img {
+      @keyframes move_img_3 {
         0% {
           transform: translateX(0) rotate(180deg);
         }
         100% {
           transform: translateX(30vw) translateY(50vh) rotate(180deg);
         }
-        
       }
-      #image-1 {
-        position: absolute;
-
-        right: 10%;
-        animation: fadein_1 10s;
+      @keyframes move_img_2 {
+        0% {
+          transform: translateX(0) rotate(180deg);
+        }
+        100% {
+          transform: translateX(30vw) translateY(50vh) rotate(180deg);
+        }
       }
-      #image-3 {
-        position: relative;
-        top:30%;
-        animation: move_img 10s;
-        transform: translateX(30vw) translateY(50vh) rotate(180deg);
+      @keyframes move_img_1 {
+        0% {
+          transform: translateX(0)
+        }
+        100% {
+          transform: translateY(-10vw);
+        }
       }
-      .move_image_3 {
-        position: absolute;
-        animation: move_img 10s;
+      #img-container img {
+        border-radius: 3px;
+        border: 3px solid;
+      }
+      #img-item-1 {
+        animation: move_img_1 5s;
       }
     </style>
-    <title>หนีออก</title>
+    <title>ความทรงจํา</title>
   </head>
   <body id="background-3">
     <div
@@ -55,11 +56,16 @@
       style="display: flex; flex-direction: row; justify-content: center"
     >
       <div style="width: 50%; text-align: end">
-        <h1>หนีออก</h1>
+        <h1>ความทรงจํา</h1>
       </div>
       <div style="margin-left: auto">
         <a href="../index.html">
-          <img src="../assets/svg/home.svg" alt="home icon" />
+          <img
+            src="../assets/svg/home.svg"
+            alt="home icon"
+            width="400px"
+            height="200px"
+          />
         </a>
       </div>
     </div>
@@ -80,6 +86,43 @@
         autoplay
       ></lottie-player>
     </div>
+    <div
+      id="img-container"
+      style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top:10%"
+    >
+      <div id="img-item-1" style="width: 40%">
+        <img
+          src="../assets/img/memory/04630022.JPG"
+          alt=""
+          width="400px"
+          height="300px"
+        />
+      </div>
+      <div id="img-item-2" style="width: 40%">
+        <img
+          src="../assets/img/memory/41300025.JPG"
+          alt=""
+          width="400px"
+          height="300px"
+        />
+      </div>
+      <div id="img-item-3" style="width: 40%">
+        <img
+          src="../assets/img/memory/IMG_5070.JPG"
+          alt=""
+          width="400px"
+          height="300px"
+        />
+      </div>
+      <div id="img-item-4" style="width: 40%">
+        <img
+          src="../assets/img/memory/04630024.JPG"
+          alt=""
+          width="400px"
+          height="300px"
+        />
+      </div>
+    </div>
     <div style="margin: auto; margin-top: 10%">
       <div
         id="container"
@@ -94,49 +137,5 @@
         </a>
       </div>
     </div>
-    <div id="container" style="display: flex; flex-wrap: wrap; gap:50%">
-      <div id="image-1">
-        <img
-          src="../assets/img/5/DJI_25651117_134900_731.jpg"
-          alt="image-1"
-          width="500px"
-          height="305px"
-          style="border: 2px solid"
-        />
-      </div>
-      <div id="image-2">
-        <img
-          src="../assets/img/5/IMG_3993.jpg"
-          alt="image-2"
-          width="500px"
-          height="305px"
-          style="border: 2px solid"
-        />
-      </div>
-      <div id="image-3">
-        <img
-          src="../assets/img/5/IMG_3940.jpg"
-          width="500px"
-          height="305px"
-          style="border: 2px solid"
-          alt=""
-        />
-      </div>
-    </div>
-
-    <div></div>
   </body>
-  <script>
-    const  image_3 = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("move_image_3");
-    } else {
-      entry.target.classList.remove("move_image_3");
-      console.log("not visible");
-    }
-  });
-});
-image_3.observe(document.querySelector("#image-3"));
-  </script>
 </html>
